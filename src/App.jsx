@@ -1,19 +1,39 @@
-import { useState } from 'react'
-import Navbar from './Navbar.jsx'
-import FAQ from './FAQ.jsx'
-
-
-import './App.css'
+import { useState } from "react";
+import { AnimatePresence } from "motion/react";
+import Navbar from "./Navbar";
+import Intro from "./Intro";
+import "./App.css";
 
 function App() {
-  
+
+  const [showIntro, setShowIntro] = useState(true);
 
   return (
-    <>
-      <Navbar/>
-      <FAQ/>
-    </>
-  )
+    <AnimatePresence mode="wait">
+
+      {showIntro ? (
+
+        <Intro
+          key="intro"
+          onComplete={() => setShowIntro(false)}
+        />
+
+      ) : (
+
+        <main key="website">
+          
+          <Navbar/>
+
+          <p>
+            This is my actual website.
+          </p>
+
+        </main>
+
+      )}
+
+    </AnimatePresence>
+  );
 }
 
-export default App
+export default App;
