@@ -30,3 +30,11 @@
 .hyper-letter {
   font-family: monospace;
 }
+
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
