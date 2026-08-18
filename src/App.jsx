@@ -3,6 +3,7 @@ import { AnimatePresence } from "motion/react";
 import Navbar from "./Navbar";
 import Intro from "./Intro";
 import Home from "./Home";
+import Skills from "./Skills";
 import "./App.css";
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
           
           <Navbar/>
           <Home/>
-          
+          <Skills/>
 
         </main>
 
