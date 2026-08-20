@@ -4,34 +4,24 @@ import Navbar from "./Navbar";
 import Intro from "./Intro";
 import Home from "./Home";
 import Skills from "./Skills";
+import About from "./About";
 import "./App.css";
 
 function App() {
-
   const [showIntro, setShowIntro] = useState(true);
 
   return (
     <AnimatePresence mode="wait">
-
       {showIntro ? (
-
-        <Intro
-          key="intro"
-          onComplete={() => setShowIntro(false)}
-        />
-
+        <Intro key="intro" onComplete={() => setShowIntro(false)} />
       ) : (
-
         <main key="website">
-          
-          <Navbar/>
-          <Home/>
-          <Skills/>
-
+          <Navbar />
+          <Home />
+          <Skills />
+          <About />
         </main>
-
       )}
-
     </AnimatePresence>
   );
 }

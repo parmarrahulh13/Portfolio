@@ -3,14 +3,10 @@ import heroimg from "./assets/hero-img.png";
 
 function Home() {
   return (
-    <section
-      className="Home"
-      style={{ backgroundImage: `url(${heroimg})` }}
-    >
+    <section className="Home" style={{ backgroundImage: `url(${heroimg})` }}>
       <div className="Home-content">
-
         <p className="Home-label">
-         <span>●</span> FULL-STACK DEVELOPER
+          <span>●</span> FULL-STACK DEVELOPER
         </p>
 
         <h1>
@@ -20,21 +16,19 @@ function Home() {
         </h1>
 
         <p className="Home-description">
-          I build modern, responsive web applications using
-          React, JavaScript, HTML5 and CSS3.
+          I build modern, responsive web applications with React, Node.js,
+          Express, and MongoDB — from beautiful interfaces to powerful backend
+          systems.
         </p>
 
         <div className="Home-buttons">
           <button>View My Work →</button>
-          <button className="secondary-btn">
-            Let's Talk
-          </button>
+          <button className="secondary-btn">Let's Talk</button>
         </div>
 
         <p className="availability">
           <span>●</span> Available for opportunities
         </p>
-
       </div>
     </section>
   );

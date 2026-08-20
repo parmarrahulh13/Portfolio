@@ -1,0 +1,45 @@
+.About {
+  min-height: 100vh;
+  padding: 20px 5%;
+
+  display: flex;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+
+  position: relative;
+}
+
+.About-content {
+  max-width: 650px;
+  text-align: left;
+   position: relative;
+  z-index: 1;
+}
+
+
+.About-label span{
+    color: #6d5dfc;
+}
+
+.About h1 {
+  font-size: clamp(50px, 7vw, 90px);
+  line-height: 1;
+  margin: 20px 0;
+}
+
+
+
+.About-description {
+  color: #9ca3af;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 550px;
+}
+
+
+
